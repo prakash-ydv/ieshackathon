@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="margin-bottom: 20px; color: orangered;">Registration Form</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="team_name">Team Name:</label>
+                <input type="text" id="team_name" name="team_name" required>
+            </div>
+            <div class="form-group">
+                <label for="ps_code">PS Code:</label>
+                <input type="text" id="ps_code" name="ps_code" required>
+            </div>
+            <div class="form-group">
+                <label for="ps_title">PS Title:</label>
+                <input type="text" id="ps_title" name="ps_title" required>
+            </div>
+            <div class="form-group">
+                <label for="your_solution">Your Solution:</label>
+                <textarea id="your_solution" name="your_solution" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="abstract">Abstract:</label>
+                <textarea id="abstract" name="abstract" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="ppt">Upload your PPT:</label>
+                <input type="file" id="ppt" name="ppt" accept=".ppt,.pptx" required>
+            </div>
+            <div class="form-group">
+                <label for="video_link">Video Link:</label>
+                <input type="url" id="video_link" name="video_link" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
