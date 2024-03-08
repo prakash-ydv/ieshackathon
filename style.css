@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(https://www.psdgraphics.com/wp-content/uploads/2020/12/white-background.jpg);
+    font-family: Poppins, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* welcome msg */
+.welcome_msg {
+    margin: 15px;
+    text-align: center;
+    width: 80vw;
+    height: fit-content;
+}
+
+.welcome_msg h1 {
+    font-size: 3vw;
+}
+
+/* image slider */
+.slider {
+    width: 80vw;
+    height: fit-content;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    display: none;
+}
+
+.active {
+    display: block;
+    animation: slide 1s ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* box container */
+.box_container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    height: fit-content;
+    width: 80vw;
+
+}
+
+.box {
+    margin: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+    background-color: #002449;
+    border-radius: 10px;
+}
+
+.box_btn {
+    color: rgba(40, 39, 39, 0.872);
+    margin-top: 40px;
+    font-weight: 700;
+    height: 40px;
+    width: 130px;
+    background-color: white;
+    border: 1px solid rgb(253, 108, 55);
+    border-radius: 25px;
+}
+
+.box_btn:hover {
+    color: white;
+    background-color: orangered;
+}
+
+/* taarif */
+
+.taarif {
+    
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: fit-content;
+    width: calc(100vw - 40px);
+}
+
+.tarif_box {
+    border: 1px solid purple;
+    border-radius: 15px;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 340px;
+    width: 250px;
+    gap: 20px;
+    padding: 25px;
+}
+
+.tarif_box img {
+    padding: 10px;
+}
+
+.tarif_box h1 {
+    padding: 10px;
+    font-family: Roboto, sans-serif;
+    color: #00357a;
+}
+
+
+/* TimeLine */
+
+.timeline_desc{
+    height: 100px;
+    padding: 25px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+    background-color: #002449;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.timeline {
+    
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #333;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    margin-bottom: 50px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: black;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+.timeline-content {
+    color: white;
+    background: #e97e2e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.timeline-content p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(30, 30, 30);
+}
+.timeline-heading {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.timeline-description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .timeline {
+        padding: 0 10px;
+    }
+
+    .timeline-content {
+        padding: 15px;
+    }
+}
+
+
+/* responsiveness */
+@media (max-width: 800px) {
+
+
+
+    .welcome_msg {
+        margin-top: 25px;
+        width: 95vw;
+    }
+
+    .welcome_msg h1 {
+        font-size: 33px;
+    }
+
+    .slider {
+
+        width: 99vw;
+        margin: auto;
+    }
+
+    .box_container {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .taarif {
+        flex-direction: column;
+    }
+}
+
+
+/* Initially hide the boxes */
+.box,
+.tarif_box {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Animate the boxes when they come into view */
+.box.animate,
+.tarif_box.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
